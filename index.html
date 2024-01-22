@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Blog preview card</title>
+    <style></style>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <style>
+    .hover:hover {
+      color: hsl(47, 88%, 63%);
+    }
+  </style>
+  <body
+    class="flex justify-center items-center h-screen w-screen"
+    style="
+      background-color: hsl(47, 88%, 63%);
+      font-family: 'Figtree', sans-serif;
+    "
+  >
+    <div
+      class="flex flex-col bg-white w-96 md:w-[25rem] p-6 rounded-xl border-2 border-black gap-8"
+      style="box-shadow: 10px 10px black"
+    >
+      <div class="img rounded-xl overflow-hidden">
+        <img src="assets/images/illustration-article.svg" alt="" />
+      </div>
+      <div class="content flex flex-col gap-3">
+        <div
+          class="tag font-bold px-5 py-1 rounded-md w-fit"
+          style="background-color: hsl(47, 88%, 63%)"
+        >
+          Learning
+        </div>
+        <p class="text-[16px]">Published 21 Dec 2023</p>
+        <h1
+          class="text-2xl font-bold hover cursor-pointer transition-all duration-300"
+        >
+          HTML & CSS foundations
+        </h1>
+        <p class="text-[16px]" style="color: hsl(0, 0%, 50%)">
+          These languages are the backbone of every website, defining structure,
+          content, and presentation.
+        </p>
+      </div>
+      <div class="profile flex gap-2 items-center">
+        <div class="w-10">
+          <img class="img" src="assets/images/image-avatar.webp" />
+        </div>
+        <h2 class="font-bold text-lg">Greg Hooper</h2>
+      </div>
+    </div>
+  </body>
+</html>
